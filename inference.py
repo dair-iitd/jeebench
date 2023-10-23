@@ -1,15 +1,8 @@
-import shutil
-import sys
 import os
 from tqdm import tqdm
-from requests import HTTPError
-import copy
 import json
 import os
-import sys
 import openai
-import pandas as pd
-from requests import HTTPError
 from tqdm import tqdm
 import argparse
 import multiprocessing 
@@ -116,17 +109,19 @@ def get_response(question,model, model_nickname, mode, response_file, lock):
 	return 
 
 def main():
-	
+	'''
+	The code can restart from the already done questions in case there is a failure midpoint.
+	'''
 	args = argparse.ArgumentParser()
 	args.add_argument('--model', default='gpt-3.5-turbo')
 	args.add_argument('--data', default='data/dataset.json')
-	args.add_argument('--mode', default='normal') #CoT
+	args.add_argument('--mode', default='normal')
 	args.add_argument('--num_procs', default=1, type=int)
 	args.add_argument('--max_questions', default=1, type=int)
 	args = args.parse_args()
 
-	openai.organization = 'org-KNYwhptawzelctEOiEEA79CS'  # zaki's org iitd
-	openai.api_key = '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'  # zaki's key
+	openai.organization = os.getenv("OPENAI_ORG")
+	openai.api_key = os.getenv("OPENAI_API_KEY")
 	
 	model_nickname = {
 		"davinci-002": "davinci-002",
