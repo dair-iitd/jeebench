@@ -1,2 +1,2 @@
 # jeebench
-Jee Bench Paper repo
+Repository
