@@ -1,5 +1,5 @@
 # JEEBench(EMNLP 2023)
-Repository for the code and dataset for the paper: "Have LLMs Advanced Enough? A Harder Problem Solving Benchmark For Large Language Models" accepted in EMNLP 2023 as a Main conference paper. 
+Repository for the code and dataset for the paper: "Have LLMs Advanced Enough? A Harder Problem Solving Benchmark For Large Language Models" accepted in EMNLP 2023 as a Main conference paper. https://arxiv.org/abs/2305.15074v2
 
 ![respresentative](https://github.com/dair-iitd/jeebench/assets/45387992/d0d14064-bce9-4b58-ac3f-87fef18fcff3)
 
