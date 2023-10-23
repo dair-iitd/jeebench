@@ -8,7 +8,7 @@ Repository for the code and dataset for the paper: "Have LLMs Advanced Enough? A
 To access the dataset, unzip the dataset.zip file. This contains the dataset, few-shot examples and responses collected from GPT models along with extracted answers. 
 The dataset contains questions from Physics, Chemistry and Mathematics collected from JEE Advanced 2016 to 2023. The breakdown with respect to subject type and response type is as follows:
 
-![image](https://github.com/dair-iitd/jeebench/assets/45387992/592af8bc-6a5f-457e-a8d8-806046e0463a)
+<img src="https://github.com/dair-iitd/jeebench/assets/45387992/592af8bc-6a5f-457e-a8d8-806046e0463a" alt="drawing" width="500"/>
 
 
 ## Quick example
